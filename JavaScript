@@ -1,0 +1,12 @@
+document.getElementById('transaksiForm').addEventListener('submit', function(e) {
+    const nama = document.getElementById('nama').value;
+    const jumlah = document.getElementById('jumlah').value;
+    const kategori = document.getElementById('kategori').value;
+
+    if (nama === "" || jumlah === "" || kategori === "") {
+        e.preventDefault(); // Mencegah form terkirim
+        alert("Peringatan: Semua kolom harus diisi!");
+    } else {
+        alert("Data berhasil disimpan!");
+    }
+});
